@@ -20,11 +20,21 @@ func repeatMe(words ...string) {
 	fmt.Println(words)
 }
 
+func superAdd(numbers ...int) int {
+	var total int = 0 // or simply, total := 0
+	for _, number := range numbers {
+		total += number
+	}
+	return total
+}
+
 func main() {
 	// fmt.Println("hello world!")
 	// ex.ExSay()
 	// fmt.Println(multiply(2, 3))
 	// totalLength, upperName := lenAndUpper("keon")
 	// fmt.Println(totalLength, upperName)
-	repeatMe("I", "am", "a", "rockstar", "!!!")
+	// repeatMe("I", "am", "a", "rockstar", "!!!")
+	result := superAdd(1, 2, 3, 4, 5)
+	fmt.Println(result)
 }
