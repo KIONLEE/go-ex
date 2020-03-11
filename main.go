@@ -43,17 +43,8 @@ func canIDrink(age int) bool {
 }
 
 func main() {
-	// fmt.Println("hello world!")
-	// ex.ExSay()
-	// fmt.Println(multiply(2, 3))
-	// totalLength, upperName := lenAndUpper("keon")
-	// fmt.Println(totalLength, upperName)
-	// repeatMe("I", "am", "a", "rockstar", "!!!")
-	// #1.5
-	// result := superAdd(1, 2, 3, 4, 5)
-	// fmt.Println(result)
-
-	// #1.6
-	fmt.Println(canIDrink(16))
-
+	a := 2
+	b := &a
+	*b = 20
+	fmt.Println(a)
 }
