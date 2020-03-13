@@ -42,9 +42,14 @@ func canIDrink(age int) bool {
 	return false
 }
 
+type person struct {
+	name    string
+	age     int
+	favFood []string
+}
+
 func main() {
-	keon := map[string]int{"name": 1, "age": 2}
-	for key, value := range keon {
-		fmt.Println(key, ":", value)
-	}
+	favFood := []string{"kimchi", "ramen"}
+	keon := person{name: "keon", age: 18, favFood: favFood}
+	fmt.Println(keon.name)
 }
