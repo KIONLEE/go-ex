@@ -43,8 +43,7 @@ func canIDrink(age int) bool {
 }
 
 func main() {
-	a := 2
-	b := &a
-	*b = 20
-	fmt.Println(a)
+	names := []string{"keon", "yura", "bora"}
+	names = append(names, "lalala")
+	fmt.Println(names)
 }
