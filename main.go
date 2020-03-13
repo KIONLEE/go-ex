@@ -43,7 +43,8 @@ func canIDrink(age int) bool {
 }
 
 func main() {
-	names := []string{"keon", "yura", "bora"}
-	names = append(names, "lalala")
-	fmt.Println(names)
+	keon := map[string]int{"name": 1, "age": 2}
+	for key, value := range keon {
+		fmt.Println(key, ":", value)
+	}
 }
